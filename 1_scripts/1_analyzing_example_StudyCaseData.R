@@ -2,7 +2,7 @@
 #  Calculate GL and LL index from hunting yields statistics
 #  author: Sonia Illanas
 #  institution: Institute of Game and Wildlife Research
-#  date of last modification: 06/10/2024
+#  date of last modification: 31/01/2025
 # -----------------------------------------------------------
 ## R version 4.4.2
 ## tidyverse version: 2.0.0
