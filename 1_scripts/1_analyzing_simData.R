@@ -4,14 +4,30 @@
 #  institution: Institute of Game and Wildlife Research
 #  date of last modification: 06/10/2024
 # ---------------------------------------------
+## R version 4.4.2
+## tidyverse version: 2.0.0
+## sf version: 1.0-16
+## grid version: 4.4.2
+## ggpubr version: 0.6.0
+## cowplot version: 1.1.3
+
+# devtools::install_version("tidyverse", version = "2.0.0")
+# devtools::install_version("sf", version = "1.0-16")
+# devtools::install_version("grid", version = "4.4.2")
+# devtools::install_version("ggpubr", version = "0.6.0")
+# devtools::install_version("spdep", version = "1.3-10")
+# devtools::install_version("cowplot", version = "1.1.3")
+
+
 library(tidyverse)
 library(sf)
 library(grid)
 library(ggpubr)
-rm(list=ls())
+library(spdep)
+rm(list=ls()) # clears R workspace
 
 # 1 load your simulated data and connectivity matrices
-load(file="/mnt/wwn-0x5000c500a8d29c86-part2/IREC/PhD/D/Docs/Sonia/0_PhD/1_Cap1/1_WIP/1_scripts/script_github/dataSim.Rdata")
+load(file="dataSim.Rdata")
 
 # 1.1 Visualize your variables
 ggarrange(ggplot(data.sim)+ geom_sf(aes(fill=A))   + theme_minimal(),
@@ -21,7 +37,7 @@ ggarrange(ggplot(data.sim)+ geom_sf(aes(fill=A))   + theme_minimal(),
           nrow=2, ncol=2)
 
 # 2 load lee and lee.mc modified functions
-load("/mnt/wwn-0x5000c500a8d29c86-part2/IREC/PhD/D/Docs/Sonia/0_PhD/1_Cap1/1_WIP/1_scripts/script_github/load_GL_LL_functions.Rdata")
+load("load_GL_LL_functions.Rdata")
 
 # 4 calculate lee index with the load modified function
 data.sim<-data.sim %>% mutate(LiBB=lee(data.sim$B, data.sim$B, con.one.neig, con.one.neig, nrow(data.sim))$localL, 
@@ -88,14 +104,6 @@ ggdraw()+
 
 
 # 6 Global L p-values after monte carlo permutation
-lee.mc(data.sim$B, data.sim$B, con.itself, con.itself, nsim=10000)
-lee.mc(data.sim$B, data.sim$B, con.one.neig, con.one.neig, nsim=10000) 
-lee.mc(data.sim$B, data.sim$B, con.one.neig, con.two.neig, nsim=10000)
-
-lee.mc(data.sim$B, data.sim$B_p, con.itself, con.itself, nsim=10000)
-lee.mc(data.sim$B, data.sim$B_p, con.one.neig, con.one.neig, nsim=10000) 
-lee.mc(data.sim$B, data.sim$B_p, con.one.neig, con.two.neig, nsim=10000)
-
 lee.mc(data.sim$A, data.sim$A, con.itself, con.itself, nsim=10000)
 lee.mc(data.sim$A, data.sim$A, con.one.neig, con.one.neig, nsim=10000)
 lee.mc(data.sim$A, data.sim$A, con.one.neig, con.two.neig, nsim=10000)
@@ -103,3 +111,11 @@ lee.mc(data.sim$A, data.sim$A, con.one.neig, con.two.neig, nsim=10000)
 lee.mc(data.sim$A, data.sim$A_p, con.itself, con.itself, nsim=10000)
 lee.mc(data.sim$A, data.sim$A_p, con.one.neig, con.one.neig, nsim=10000)
 lee.mc(data.sim$A, data.sim$A_p, con.one.neig, con.two.neig, nsim=10000)
+
+lee.mc(data.sim$B, data.sim$B, con.itself, con.itself, nsim=10000)
+lee.mc(data.sim$B, data.sim$B, con.one.neig, con.one.neig, nsim=10000) 
+lee.mc(data.sim$B, data.sim$B, con.one.neig, con.two.neig, nsim=10000)
+
+lee.mc(data.sim$B, data.sim$B_p, con.itself, con.itself, nsim=10000)
+lee.mc(data.sim$B, data.sim$B_p, con.one.neig, con.one.neig, nsim=10000) 
+lee.mc(data.sim$B, data.sim$B_p, con.one.neig, con.two.neig, nsim=10000)
