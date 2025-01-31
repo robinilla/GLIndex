@@ -87,7 +87,7 @@ lw_Hare<-nb2listw(lw_Hare, style = "W", zero.policy = TRUE)
 load("load_GL_LL_functions.Rdata")
 
 a.lee<-lee(x=Rabbit, y=WB, listwx=lw_WB, listwy=lw_WB, n=length(Rabbit))
-b.lee<-lee(x=Rabbit, y=Fox, listwx=lw_Rabbit, listwy=lw_Fox,, n=length(Rabbit))
+b.lee<-lee(x=Rabbit, y=Fox, listwx=lw_Rabbit, listwy=lw_Fox, n=length(Rabbit))
 c.lee<-lee(x=Fox, y=Hare, listwx=lw_Fox, listwy=lw_Hare, n=length(Fox))
 
 
