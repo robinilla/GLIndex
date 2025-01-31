@@ -4,7 +4,7 @@ This repository brings the opportunity to calculate the global L index (GL') and
 
 The below image summarises the idea and equations of incorporating variable-specific connectivity matrices.
 
-
+![GL_LL_revised_Lindex](https://github.com/robinilla/PhD_GLIndex/blob/main/GL_LL_revised_Lindex.png)
 
 ## R scripts and data
 
