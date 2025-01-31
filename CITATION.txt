@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Illanas"
+  given-names: "Sonia"
+  orcid: "https://orcid.org/0000-0001-7984-1141"
+- family-names: "Virgilio"
+  given-names: "Gómez-Rubio"
+  orcid: "https://orcid.org/0000-0002-4791-3072"
+- family-names: "Vicente"
+  given-names: "Joaquín"
+  orcid: "https://orcid.org/0000-0001-8416-3672"
+- 
+- family-names: "Acevedo"
+  given-names: "Pelayo"
+  orcid: "https://orcid.org/0000-0002-3509-7696"
+- 
+title: "GLIndex"
+version: 1.0.0
+doi: # 
+date-released: 2024-10-04
+url: "https://github.com/robinilla/PhD_GLIndex" 
+
+preferred-citation:
+  type: article
+  authors:
+ - family-names: "Illanas"
+  given-names: "Sonia"
+  orcid: "https://orcid.org/0000-0001-7984-1141"
+- family-names: "Virgilio"
+  given-names: "Gómez-Rubio"
+  orcid: "https://orcid.org/0000-0002-4791-3072"
+- family-names: "Vicente"
+  given-names: "Joaquín"
+  orcid: "https://orcid.org/0000-0001-8416-3672"
+- family-names: "Acevedo"
+  given-names: "Pelayo"
+  orcid: "https://orcid.org/0000-0002-3509-7696"
+
+  doi: #""
+  journal: "Ecological Indicators"
+  month: #
+  start: # First page number
+  end: # Last page number
+  title: "Assessment of bivariate relationships between spatial patterns: revisiting the L index for wildlife management and conservation."
+  issue: #
+  volume: #
+  year: #
