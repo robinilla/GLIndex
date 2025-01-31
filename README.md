@@ -10,12 +10,9 @@ The below image summarises the idea and equations of incorporating variable-spec
 
 In the script folder there is provided:
 
-- the [load_GL_LL_functions.Rdata](https://github.com/robinilla/PhD_GLIndex/blob/main/1_scripts/load_GL_LL_functions.Rdata) file which provides the modificated lee() function for the global and local index as well as the lee.mc() modificated function found in Bivand et al. 2013.
+- the [load_GL_LL_functions.Rdata](https://github.com/robinilla/PhD_GLIndex/blob/main/script/load_GL_LL_functions.Rdata) file which provides the modificated lee() function for the global and local index as well as the lee.mc() modificated function found in Bivand et al. 2013.
 
-- the data used for the simulation case study as [dataSim.Rdata](https://github.com/robinilla/PhD_GLIndex/blob/main/1_scripts/dataSim.Rdata) file and the [1_analyzing_simData.R](https://github.com/robinilla/PhD_GLIndex/blob/main/1_scripts/1_analyzing_simData.R) script used for doing the analysis and plots.
-
-- the file [data_example_StudyCase.Rdata](https://github.com/robinilla/PhD_GLIndex/blob/main/1_scripts/data_example_StudyCase.Rdata) which contains a simulated example of real data for applying the [1_analyzing_Invented_StudyCAseData.R](https://github.com/robinilla/PhD_GLIndex/blob/main/1_scripts/1_analyzing_Invented_StudyCaseData.R) script. We cannot share the data used in the real case study due to data confidentiality agreement, but the analyzing script is the same one that we used for analyzing that data.
-
+- the data used for the simulation case study as [dataSim.Rdata](https://github.com/robinilla/PhD_GLIndex/blob/main/script/dataSim.Rdata) file and the [analyzing_dataSim.R](https://github.com/robinilla/PhD_GLIndex/blob/main/script/analyzing_dataSim.R) script used for doing the analysis and plots.
 
 ## References
 
