@@ -9,6 +9,7 @@
 ## sf version: 1.0-16
 ## grid version: 4.4.2
 ## ggpubr version: 0.6.0
+## spdep version: 1.3-10
 ## cowplot version: 1.1.3
 
 # devtools::install_version("tidyverse", version = "2.0.0")
@@ -17,7 +18,6 @@
 # devtools::install_version("ggpubr", version = "0.6.0")
 # devtools::install_version("spdep", version = "1.3-10")
 # devtools::install_version("cowplot", version = "1.1.3")
-
 
 library(tidyverse)
 library(sf)
